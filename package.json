@@ -30,7 +30,7 @@
     "webpack": "^1.8.4"
   },
   "devDependencies": {
-    "jest-cli": "^0.4.0",
+    "jest-cli": "^0.4.0"
   },
   "jest": {
     "scriptPreprocessor": "./tools/preprocessor.js",

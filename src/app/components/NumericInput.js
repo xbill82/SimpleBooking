@@ -1,4 +1,5 @@
 import React from 'react/addons';
+import Button from 'react-bootstrap/lib/Button';
 
 /*
  * @class NumericInput
@@ -14,12 +15,24 @@ class NumericInput extends React.Component {
     return React.addons.PureRenderMixin.shouldComponentUpdate.apply(this, arguments);
   }
 
+  increase() {
+    console.log('increasing...');
+  }
+
+  decrease() {
+    console.log('decreasing...');
+  }
+
   /*
    * @method render
    * @returns {JSX}
    */
   render () {
-    return <input type="number" value="1" size="2" />;
+    return <div class="numeric-input">
+        <Button bsStyle="primary" onClick={this.decrease}>-</Button>
+        <input type="number" />
+        <Button bsStyle="primary" onClick={this.increase}>+</Button>
+      </div>;
   }
 }
 

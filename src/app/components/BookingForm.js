@@ -1,5 +1,6 @@
 import React from 'react/addons';
 import NumericInput from './NumericInput';
+import Button from 'react-bootstrap/lib/Button';
 
 /*
  * @class BookingForm
@@ -27,6 +28,7 @@ class BookingForm extends React.Component {
       <NumericInput/>
       <div class="step">As-tu quelque chose de plus à nous dire?</div>
       <textarea placeholder="Tu peux nous le dire ici!"></textarea>
+      <Button bsStyle='primary'>Je viens!</Button>
     </div>;
   }
 }

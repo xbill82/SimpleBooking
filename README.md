@@ -1,4 +1,2 @@
-SimpleBooking
-=============
-
-Simple booking system for easy events
+# SimpleBooking
+The simplest way to book a gig.
